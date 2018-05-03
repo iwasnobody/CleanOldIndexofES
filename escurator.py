@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch
 import curator
 
 def lambda_handler(event, context):
-    client = Elasticsearch(['http://elasticsearch.ivanyu.tech:80'])
+    client = Elasticsearch(['http://elasticsearch.XXXX.tech:80'])
     ilo = curator.IndexList(client)
     if ilo.indices == []:
         print "No indices available in ES"
