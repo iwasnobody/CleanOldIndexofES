@@ -5,7 +5,7 @@ import curator
 import os
 
 def lambda_handler(event, context):
-    host = 'search-testa-lznr7n63hxwoc3zdpf6si42yja.us-east-1.es.amazonaws.com'
+    host = 'search-XXXX-lznr7n63hxwoc3zdpf6si42yja.us-east-1.es.amazonaws.com'
     
     awsauth = AWS4Auth(os.environ['AK'], os.environ['SK'], 'us-east-1', 'es')
 
