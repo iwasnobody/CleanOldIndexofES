@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore") #ignore warnings the generated when verify_certs=False
 
 def lambda_handler(event, context):
-    host = 'elasticsearch2.ivanyu.rocks'
+    host = 'elasticsearch2.XXX.rocks'
     
     awsauth = AWS4Auth(os.environ['AK'], os.environ['SK'], 'us-east-1', 'es')
 
